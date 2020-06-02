@@ -1,7 +1,7 @@
 <mat-toolbar>
   <span [style.flex.%]="100">Home</span>
   <button mat-icon-button
-          [matTooltip]="themer.isLight ? 'Set Dark' : 'Set Light'"
+          [matTooltip]="themer.isLight ? 'Turn Off Lights' : 'Turn On Lights'"
           (click)="themer.toggleTheme()">
     <mat-icon class="fa-lg"
               [fontSet]="themer.isLight ? 'far' : 'fas'"
