@@ -1,6 +1,7 @@
 <mat-toolbar>
   <span [style.flex.%]="100">Home</span>
   <button mat-icon-button
+          matTooltipPosition="left"
           [color]="themer.isLight ? 'accent' : 'default'"
           [matTooltip]="themer.isLight ? 'Turn Off Lights' : 'Turn On Lights'"
           (click)="themer.toggleTheme()">
