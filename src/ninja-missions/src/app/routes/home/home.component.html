@@ -1,10 +1,16 @@
 <mat-toolbar>
   <span [style.flex.%]="100">Home</span>
   <button mat-icon-button
+          [color]="themer.isLight ? 'accent' : 'default'"
           [matTooltip]="themer.isLight ? 'Turn Off Lights' : 'Turn On Lights'"
           (click)="themer.toggleTheme()">
     <mat-icon class="fa-lg"
-              [fontSet]="themer.isLight ? 'far' : 'fas'"
+              [fontSet]="themer.isLight ? 'fas' : 'far'"
               fontIcon="fa-lightbulb"></mat-icon>
   </button>
 </mat-toolbar>
+<section [style.padding.px]="8">
+  <p class="color primary">Primary Color</p>
+  <p class="color accent">Accent Color</p>
+  <p class="color warn">Warn Color</p>
+</section>
